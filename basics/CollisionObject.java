@@ -3,6 +3,7 @@ package de.hpi.javaide.breakout.basics;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Shape;
+import java.util.ArrayList;
 
 import de.hpi.javaide.breakout.Collidable;
 import de.hpi.javaide.breakout.Colorable;
@@ -38,6 +39,8 @@ public abstract class CollisionObject implements Collidable, Displayable, Colora
 	 * the color of the object
 	 */
 	private Color color;
+	
+	public ArrayList<Point> collisionPoints;
 	/**
 	 * Constructor. Initializes the reference to the Game, the size and the position of the object
 	 * @param game Game, access to the Processing features 
@@ -49,6 +52,7 @@ public abstract class CollisionObject implements Collidable, Displayable, Colora
 		this.position = position;
 		this.dimension = dimension;
 		this.color = new Color(255, 255, 255);
+		
 	}
 
 	@Override

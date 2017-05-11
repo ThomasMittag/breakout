@@ -49,16 +49,15 @@ public class Ball extends Elliptic implements Measureable{
 	}
 
 	public void move() {
-		// TODO Auto-generated method stub
+		this.position.x+=ballMovement.getX();
+		this.position.y+=ballMovement.getY();
 		
 	}
 	
 	public int getX(){
-		//return Math.round(this.ballPosition.x);
 		return this.position.x;
 	}
 	public int getY(){
-		//return Math.round(this.ballPosition.y);
 		return this.position.y;
 	}
 	public int getWidth() {

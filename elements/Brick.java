@@ -9,10 +9,12 @@ import de.hpi.javaide.breakout.starter.Game;
 //TODO wichtige Attribute: Größe, Position, Abstand der Bricks untereinander
 //     Irgendwie muss ich herausbekommen ob der Stein noch existiert oder nicht.
 public class Brick extends Rectangular {
+	public boolean isVisible;
+	
 
 	public Brick(Game game, Point position, Dimension dimension) {
 		super(game, position, dimension);
-		// TODO Auto-generated constructor stub
+		this.isVisible = true;
 	}
 
 	@Override

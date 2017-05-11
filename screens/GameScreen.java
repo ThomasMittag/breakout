@@ -83,7 +83,7 @@ public class GameScreen implements Screen {
 	public void init() {
 		ballDepot = new BallDepot(game);
 		paddle = new Paddle(game);
-		wall = new Wall(game, 4, 2);
+		wall = new Wall(game, 6, 7);
 		score = new Score(game);
 		timer = new Timer(game);
 		game.loop();
